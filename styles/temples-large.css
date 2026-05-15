@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav button {
+    display: none;
+  }
+}
