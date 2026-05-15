@@ -1,9 +1,32 @@
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* --- Desktop Adjustments --- */
 
-  nav button {
+/* Hide the hamburger button on large screens */
+#menu {
     display: none;
-  }
+}
+
+/* Show the navigation and change to horizontal flexbox */
+.navigation {
+    display: flex !important; /* Force display on desktop */
+    flex-direction: row;
+    background: none;
+}
+
+.navigation li a {
+    padding: 0.5rem 1rem;
+}
+
+/* Update the Grid to 3 columns */
+.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+    padding: 0.5rem 5%;
+}
+
+/* Subtle image hover effect for a "pro" look */
+figure img:hover {
+    filter: brightness(1.1);
+    transition: 0.3s;
 }

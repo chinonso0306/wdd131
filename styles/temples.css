@@ -1,10 +1,115 @@
-nav {
-  display: flex;
-  justify-content: space-around;
+/* --- General Setup --- */
+:root {
+    --primary-color: #4b0082; /* Deep Purple like the example */
+    --accent-color: #ffeb3b;
+    --text-color: #333;
+    --bg-color: #fff;
+    --header-text: #fff;
 }
 
+body {
+    font-family: 'Roboto', sans-serif; /* Replace with your Google Font */
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--header-text);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- Hamburger Menu --- */
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰"; /* Hamburger icon */
+}
+
+#menu.show::before {
+    content: "❌"; /* Close icon when menu is open */
+}
+
+/* Hide navigation by default on mobile */
+.navigation {
+    list-style: none;
+    display: none; 
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.navigation.show {
+    display: flex; /* Shown when JS toggles the class */
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation li a:hover {
+    background-color: #444;
+    color: var(--accent-color);
+}
+
+/* --- Main Content --- */
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
 }

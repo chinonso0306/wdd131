@@ -1,13 +1,14 @@
-const year = document.querySelector("#year");
-const modified = document.querySelector("#lastModified");
+// 1. Set current year
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-year.textContent = new Date().getFullYear();
-modified.textContent = document.lastModified;
+// 2. Set last modified date
+document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
-const menuButton = document.querySelector("#menuButton");
-const nav = document.querySelector("nav");
+// 3. Hamburger Menu Toggle
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
 
-menuButton.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  menuButton.textContent = nav.classList.contains("open") ? "X" : "☰";
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
 });

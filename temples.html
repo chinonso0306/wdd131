@@ -1,22 +1,41 @@
-<header>
-  Temple Album
-  <nav>
-    Home | Old | New | Large | Small
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | WDD 131</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 600px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" title="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-  <h1>Temple Album</h1>
+    <main>
+        <h2>Home</h2>
+        <div class="grid">
+            <figure>
+                <img src="images/temple1.jpg" alt="San Diego Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+        </div>
+    </main>
 
-  <!-- 9+ figures -->
-  <figure>
-    <img src="images/temple1.jpg" alt="Temple 1">
-    <figcaption>Temple Name</figcaption>
-  </figure>
-
-  <!-- repeat until 9+ -->
-</main>
-
-<footer>
-  <!-- dynamic copyright + last modified -->
-</footer>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Your Name | Location</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
