@@ -22,9 +22,14 @@ header {
     align-items: center;
 }
 
+nav {
+    display: flex;
+}
+
 h1 {
     margin: 0;
 }
+
 
 /* Hamburger Button */
 #menu {
