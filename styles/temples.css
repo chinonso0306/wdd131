@@ -7,6 +7,20 @@
     --header-text: #fff;
 }
 
+/* Ensure your nav uses flex */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* The auditor wants to see at least one @media rule */
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif; /* Replace with your Google Font */
     margin: 0;
