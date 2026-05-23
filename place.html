@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Country Page</title>
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header class="hero">
+    <picture>
+      <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+      <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+      <img src="images/hero-large.webp" alt="Beautiful view of the country">
+    </picture>
+
+    <div class="hero-text">
+      <h1>My Country</h1>
+      <p>Explore the beauty and culture</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="info">
+      <h2>About the Place</h2>
+      <p>
+        This is a sample description of the country or place. Replace this text with your own content.
+      </p>
+    </section>
+
+    <section id="weather" class="weather">
+      <h2>Weather</h2>
+
+      <p>Temperature: <span id="temp">30</span> °C</p>
+      <p>Wind Speed: <span id="wind">10</span> km/h</p>
+      <p>Wind Chill: <span id="chill"></span></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> My Country Page</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
