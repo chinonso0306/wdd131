@@ -6,6 +6,7 @@
 
   <title>Nigeria | Country Page</title>
   <meta name="description" content="Country page for Nigeria with weather and cultural highlights">
+  <meta name="author" content="Chinonso Echefu">
 
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
@@ -17,7 +18,10 @@
     <picture>
       <source srcset="images/hero-small.webp" media="(max-width: 500px)">
       <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-      <img src="images/hero-large.webp" alt="Landscape of Nigeria" loading="lazy">
+      <<img src="images/hero-large.webp"
+     alt="Landscape of Nigeria"
+     width="100%"
+     height="auto">
     </picture>
 
     <div class="hero-text">
@@ -39,7 +43,7 @@
       <h2>Weather</h2>
 
       <!-- SVG REQUIRED FOR MOBILE -->
-      <img class="weather-icon" src="images/weather.svg" alt="Weather icon">
+      <img src="images/weather.svg" alt="Weather icon">
 
       <p>Temperature: <span id="temp">30</span> °C</p>
       <p>Wind Speed: <span id="wind">10</span> km/h</p>
